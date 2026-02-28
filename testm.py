@@ -2,14 +2,9 @@ import unittest
 import main
 class TestQuizScorer(unittest.TestCase):
     
-    def setUp(self):
-        self.score = []
-        print("\nEnter 5 scores for testing: ")
-        self.score = main.collect(self.score, 5)
-    
-    
     def test_avg(self):
-        self.assertEqual(main.avg(self.score),sum(self.score)/len(self.score))
+        scores=[2,3,2,0,1]
+        self.assertEqual(main.avg(scores),sum(scores)/len(scores))
         
     def test_empty_list(self):
         scores = []
@@ -18,12 +13,14 @@ class TestQuizScorer(unittest.TestCase):
             
         
     def test_highest(self):
-        result = main.highest(self.score)
-        self.assertEqual(result, max(self.score))
+        scores=[2,3,2,0,1]
+        result = main.highest(scores)
+        self.assertEqual(result, max(scores))
         
     def test_lowest(self):
-        result = main.lowest(self.score)
-        self.assertEqual(result, min(self.score))
+        scores=[2,3,2,0,1]
+        result = main.lowest(scores)
+        self.assertEqual(result, min(scores))
         
 if __name__ == "__main__":
     unittest.main()
