@@ -1,17 +1,17 @@
-﻿### Quiz Scorer Program ###
+﻿# Quiz Scorer Program 
 
 A Python program that scores student quizzes, calculates statistics, and includes unit tests.
 
-# Project Description
+## Project Description
 
 This program administers a 3-question math quiz to 5 students, scores their answers, and calculates class statistics. It demonstrates fundamental Python concepts including functions, lists, loops, conditionals, and unit testing.
 
-# Quiz Questions:
+## Quiz Questions:
 1. `2 + 8 = ?` (Correct answer: 10)
 2. `2 - 2 = ?` (Correct answer: 0)  
 3. `2 + 40 = ?` (Correct answer: 42)
 
-# Features
+## Features
 
 - Interactive quiz administration for 5 students
 - Automatic scoring (1 point per correct answer)
@@ -23,23 +23,27 @@ This program administers a 3-question math quiz to 5 students, scores their answ
 - Formatted output display
 - Comprehensive unit tests
 
-# Files
+## Files
 
 - `main.py` - Main program file with all functions and quiz logic
 - `test_main.py` - Unit tests for all functions
 
-# Unit Tests
+## Unit Tests
 The test file (test_main.py) includes 4 test cases:
 
 
 test_avg --->	Tests average calculation with sample data	
+
 test_empty_list ---> Tests handling of empty list	
+
 test_highest --->	Tests max function	
+
 test_lowest --->	Tests min function
 
-# Author
+## Author
 Samiha Nasir Farazi
 
-# Date
+## Date
 February 28 2026
+
 
